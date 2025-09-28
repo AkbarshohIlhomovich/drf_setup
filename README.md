@@ -12,13 +12,31 @@ Bu loyiha zamonaviy Django REST Framework (DRF) asosida yaratilgan bo'lib, Postg
 ✅ **CORS Support** - frontend bilan ishlash uchun
 ✅ **Django REST Framework** - to'liq API development
 ✅ **Filtering & Search** - API'da qidirish va filtrlash
+✅ **Docker Support** - container bilan deploy
+✅ **Nginx Configuration** - production ready
 ✅ **Professional Structure** - production uchun tayyor
+
+## 🐳 Docker bilan ishga tushirish (Tavsiya etiladi)
+
+### Tez boshlash
+```bash
+git clone https://github.com/AkbarshohIlhomovich/drf_setup.git
+cd drf_setup
+docker-compose up --build
+```
+
+### Manzillar
+- **Web application**: http://localhost
+- **Django admin**: http://localhost/admin (admin/admin123)
+- **API Documentation**: http://localhost/swagger/
+
+Batafsil ma'lumot uchun [DOCKER.md](DOCKER.md) ni o'qing.
 
 ## 📦 O'rnatish
 
 ### 1. Repository'ni clone qiling
 ```bash
-git clone <repository-url>
+git clone https://github.com/AkbarshohIlhomovich/drf_setup.git
 cd drf_setup
 ```
 
@@ -208,6 +226,11 @@ drf_setup/
 ├── .env.example        # Environment template
 ├── .gitignore          # Git ignore rules
 ├── requirements.txt    # Dependencies
+├── Dockerfile          # Docker configuration
+├── docker-compose.yml  # Docker services
+├── nginx.conf          # Nginx configuration
+├── entrypoint.sh       # Docker entrypoint
+├── DOCKER.md           # Docker documentation
 └── README.md           # This file
 ```
 
@@ -226,5 +249,5 @@ This project is licensed under the MIT License.
 ## 🆘 Support
 
 Agar savollar bo'lsa:
-- GitHub Issues orqali murojaat qiling
-- Email: your-email@example.com
+- GitHub Issues orqali murojaat qiling: https://github.com/AkbarshohIlhomovich/drf_setup/issues
+- Email: akbarshoh.ilhomovich@gmail.com
